@@ -8,7 +8,9 @@ Dir[File.dirname(__FILE__) + '/config/initializers/*.rb'].each { |file| require 
 Dir[File.dirname(__FILE__) + '/api/*.rb'].each { |file| require file }
 
 get '/' do
-  require_relative './service/worker.rb'
+  Thread.new do
+    require_relative './service/worker.rb'
+  end
   erb :index
 end
 
