@@ -9,16 +9,3 @@ port        ENV['PORT']     || 3000
 environment ENV['RACK_ENV'] || 'development'
 
 
-before_fork do
-  if defined?(::ActiveRecord) && defined?(::ActiveRecord::Base)
-         ActiveRecord::Base.connection_pool.disconnect!
-       end
-
-end
-
-on_worker_boot do
-  # Valid on Rails up to 4.1 the initializer method of setting `pool` size
-  ActiveSupport.on_load(:active_record) do
-    ActiveRecord::Base.establish_connection
-  end
-end
