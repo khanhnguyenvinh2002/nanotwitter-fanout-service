@@ -13,3 +13,4 @@ gem 'reel'
 gem 'http'
 gem 'webrick'
 gem 'redis-rb'
+gem "redis"
