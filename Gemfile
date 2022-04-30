@@ -1,5 +1,4 @@
-
-gem "bunny", ">= 2.7.0"
+gem "bunny", ">= 2.19.0"
 
 gem "rake"
 gem "sinatra"
