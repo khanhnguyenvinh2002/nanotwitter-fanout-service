@@ -102,7 +102,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
-  bunny (~> 2.18)
+  bunny
   http
   json
   puma

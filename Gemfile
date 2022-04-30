@@ -1,4 +1,4 @@
-gem 'bunny', '~> 2.18'
+gem 'bunny'
 
 gem "rake"
 gem "sinatra"
