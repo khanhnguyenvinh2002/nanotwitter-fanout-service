@@ -1,0 +1,22 @@
+.list_home{
+    list-style-type: none;
+}
+.tweet{
+    border: solid lightgray;
+    padding: 10px;
+    display: flex;
+}
+.tweet-main{
+    width: 90%
+}
+.tweet-image{
+    width: 10%
+}
+.tweet-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
